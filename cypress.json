@@ -1,0 +1,6 @@
+{
+    "baseUrl": "https://localhost/Biznes_Elektroniczny",
+    "defaultCommandTimeout": 30000,
+    "viewportHeight": 768,
+    "viewportWidth": 1360
+}
