@@ -51,7 +51,7 @@ describe('Complex user flow', () => {
             .should('not.exist')
 
         cy.get('.checkout')
-            .click()
+            .click()    
 
         cy.get('[name="id_gender"]')
             .first()
