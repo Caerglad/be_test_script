@@ -1,6 +1,7 @@
 {
-    "baseUrl": "https://localhost/Biznes_Elektroniczny",
+    "baseUrl": "https://172.20.83.88/Biznes_Elektroniczny",
     "defaultCommandTimeout": 30000,
     "viewportHeight": 768,
-    "viewportWidth": 1360
+    "viewportWidth": 1360,
+    "chromeWebSecurity": false
 }

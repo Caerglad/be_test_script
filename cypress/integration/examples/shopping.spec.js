@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-const product1 = "Wakacje w Meksyku"
-const product2 = "Wakacje na Kubie"
+const product1 = "Wakacje w Circa 39"
+const product2 = "Wakacje w Alaya Ubud"
 
 describe('Complex user flow', () => {
     beforeEach(() => {
@@ -84,14 +84,6 @@ describe('Complex user flow', () => {
         cy.get('[data-link-action="register-new-customer"]')
             .click()
 
-        // workaround
-        cy.get('.shopping-cart')
-            .click()
-
-        // workaround
-        cy.contains('a', 'Realizuj zamówienie')
-            .click()
-
         cy.get('[name="address1"]')
             .clear()
             .type('Konwaliowa 100')
@@ -107,23 +99,7 @@ describe('Complex user flow', () => {
         cy.get('[name="confirm-addresses"]')
             .click()
 
-        // workaround
-        cy.get('.shopping-cart')
-            .click()
-
-        // workaround
-        cy.contains('a', 'Realizuj zamówienie')
-            .click()
-
         cy.get('[name="confirmDeliveryOption"]')
-            .click()
-
-        // workaround
-        cy.get('.shopping-cart')
-            .click()
-
-        // workaround
-        cy.contains('a', 'Realizuj zamówienie')
             .click()
 
         cy.get('#payment-option-1')
